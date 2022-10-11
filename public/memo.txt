@@ -9,3 +9,5 @@ composer require symfony/webpack-encore-bundle
 - ajout package.json pour les dépendances front JS
 - creation du fichier webpack.config.js à la racine du projet également
 
+# installer yarn le gestionnaire de paquets JS equivalent à npm
+
