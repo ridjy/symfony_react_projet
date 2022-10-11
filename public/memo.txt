@@ -2,3 +2,10 @@
 
 #v1.39.0 pour symfony 4
 composer require symfony/maker-bundle v1.39.0 --dev 
+
+# pour installer react
+composer require symfony/webpack-encore-bundle
+- ajoute le dossier assets à la racine du projet 
+- ajout package.json pour les dépendances front JS
+- creation du fichier webpack.config.js à la racine du projet également
+
