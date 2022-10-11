@@ -10,4 +10,9 @@ composer require symfony/webpack-encore-bundle
 - creation du fichier webpack.config.js à la racine du projet également
 
 # installer yarn le gestionnaire de paquets JS equivalent à npm
+# puis install react via yarn 
+yarn add @babel/preset-react --dev
+yarn add react-router-dom
+yarn add --dev react react-dom prop-types axios
 
+# configuration de webpack.config.js pour activer react et ajouter un point d'entrée

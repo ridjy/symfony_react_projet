@@ -11,6 +11,7 @@ Encore
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
     .setPublicPath('/build')
+    .enableReactPreset()
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
@@ -45,9 +46,15 @@ Encore
     // enables hashed filenames (e.g. app.abc123.css)
     .enableVersioning(Encore.isProduction())
 
-    .configureBabel((config) => {
+    /*.configureBabel((config) => {
         config.plugins.push('@babel/plugin-proposal-class-properties');
-    })
+    })*/
+
+    // enables @babel/preset-env polyfills old version
+    /*.configureBabel(() => {}, {
+        useBuiltIns: 'usage',
+        corejs: 3
+    })*/
 
     // enables @babel/preset-env polyfills
     .configureBabelPresetEnv((config) => {
