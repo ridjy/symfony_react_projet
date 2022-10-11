@@ -16,3 +16,9 @@ yarn add react-router-dom
 yarn add --dev react react-dom prop-types axios
 
 # configuration de webpack.config.js pour activer react et ajouter un point d'entrée
+
+# dev react dans assets 
+# base.html.twig insertion du code {{ encore_entry_script_tags('app') }}
+
+# lancer le serveur JS en plus du symfony
+yarn encore dev --watch
