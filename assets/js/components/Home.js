@@ -24,11 +24,6 @@ class Home extends Component {
                        </ul>
                    </div>
                </nav>
-               <Switch>
-                   <Redirect exact from="/" to="/users" />
-                   <Route path="/users" component={Users} />
-                   <Route path="/posts" component={Posts} />
-               </Switch>
            </div>
         )
     }

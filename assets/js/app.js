@@ -1,9 +1,13 @@
 // ./src/js/app.js
     
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 import '../css/app.css';
-import Home from './components/Home';
+import Test from './components/Test';
     
-ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Test />
+  </React.StrictMode>
+);
