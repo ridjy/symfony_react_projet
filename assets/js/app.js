@@ -3,11 +3,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../css/app.css';
-import Test from './components/Test';
+import Banner from './components/Banner';
     
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Test />
+    <Banner />
   </React.StrictMode>
 );
